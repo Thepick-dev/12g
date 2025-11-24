@@ -37,10 +37,12 @@ h1.title {
 .tagline { font-size:clamp(26px,5vw,36px); text-transform:uppercase; font-weight:700; color:var(--accent-rules); text-align:center; margin-bottom:var(--gap-large); }
 
 main { width:100%; max-width:960px; padding:0 12px; text-align:left; }
-
 section { margin-bottom:var(--gap-mid); }
 section h2 { font-size:22px; margin-bottom:8px; text-transform:uppercase; }
 section p { margin-bottom:12px; line-height:1.5; }
+table { width:100%; border-collapse:collapse; margin-top:12px; }
+th, td { border:1px solid #ddd; padding:8px; text-align:center; font-weight:700; }
+th { background:#f0f0f0; }
 </style>
 </head>
 <body>
@@ -54,28 +56,30 @@ section p { margin-bottom:12px; line-height:1.5; }
 
   <header>
     <h1 class="title">LMS XII</h1>
-    <div class="tagline">GAME RULES</div>
+    <div class="tagline">RULES</div>
   </header>
 
   <main>
     <section>
-      <h2>Scoring</h2>
-      <p>4 points for a player goal, 2 points for an assist.</p>
-      <p>Home win against a level team gives 60 points. Adjusted for goal/assist combinations.</p>
+      <p>At the start of each gameweek, pick a team you think will win and a player you think will score and assist. You can only pick each team and player once throughout the competition. Points are awarded based on your selected team’s result according to the table below.</p>
+      <p>The teams are split into quartiles based on league position at the start of the gameweek. Points reward bravery — away wins against higher quartile teams are worth more! Players score points for any goals and assists. Use Haaland wisely!</p>
+      <p>The competition lasts until the end of the season. The player with the most points at the end wins. What constitutes a gameweek is at the organiser’s discretion.</p>
+      <p><strong>BE BRAVE — COWARDICE WILL GET YOU NOWHERE!</strong></p>
     </section>
     <section>
-      <h2>Team Picks</h2>
-      <p>Select your team for the week carefully. Points are awarded based on fixtures.</p>
-    </section>
-    <section>
-      <h2>Player Picks</h2>
-      <p>You may select a player per week. Once a player is picked, they cannot be picked again for that week.</p>
-    </section>
-    <section>
-      <h2>Other Rules</h2>
-      <p>Draws are scored at 30% of a full win. Goal: 30 points, Assist: 15 points. Ensure selections are entered before submitting.</p>
-    </section>
-  </main>
-</div>
-</body>
-</html>
+      <h2>Team Points Table</h2>
+      <table>
+        <thead>
+          <tr><th>Result/Venue</th><th>Q-Gap</th><th>Team Points</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>W/H</td><td>+3</td><td>90</td></tr>
+          <tr><td>W/H</td><td>+2</td><td>80</td></tr>
+          <tr><td>W/H</td><td>+1</td><td>70</td></tr>
+          <tr><td>W/H</td><td>0</td><td>60</td></tr>
+          <tr><td>W/H</td><td>-1</td><td>50</td></tr>
+          <tr><td>W/H</td><td>-2</td><td>40</td></tr>
+          <tr><td>W/H</td><td>-3</td><td>30</td></tr>
+          <tr><td>W/A</td><td>+3</td><td>100</td></tr>
+          <tr><td>W/A</td><td>+2</td><td>90</td></tr>
+          <tr><
