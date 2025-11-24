@@ -56,10 +56,15 @@ main { width:100%; max-width:960px; padding:0 12px; text-align:left; }
 
 .rules-text { margin-bottom:var(--gap-large); line-height:1.6; }
 .rules-table { overflow-x:auto; margin-bottom:var(--gap-large); }
-.rules-table table { border-collapse:collapse; width:100%; min-width:600px; }
+.rules-table table { border-collapse:collapse; width:auto; min-width:300px; }
 .rules-table th, .rules-table td { border:1px solid #ccc; padding:6px 10px; text-align:center; font-size:14px; }
 .rules-table th { background:#f0f0f0; font-weight:700; text-transform:uppercase; }
 .rules-table td.team { text-align:left; font-weight:700; }
+
+/* Make the three columns narrower */
+.rules-table colgroup col:nth-child(1) { width:80px; } /* Result/Venue */
+.rules-table colgroup col:nth-child(2) { width:50px; } /* Q-Gap */
+.rules-table colgroup col:nth-child(3) { width:70px; } /* Team Points */
 </style>
 </head>
 <body>
@@ -86,6 +91,11 @@ main { width:100%; max-width:960px; padding:0 12px; text-align:left; }
 
     <section class="rules-table">
       <table>
+        <colgroup>
+          <col>
+          <col>
+          <col>
+        </colgroup>
         <thead>
           <tr>
             <th>Result/Venue</th>
