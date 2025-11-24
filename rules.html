@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LMS XII - Rules</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#ffffff;
+  --text:#000000;
+  --gap-large:48px;
+  --gap-mid:28px;
+  --accent-rules:#ffd400;
+}
+body { margin:0; font-family:"League Gothic", Arial, sans-serif; background:var(--bg); color:var(--text); display:flex; flex-direction:column; align-items:center; }
+a { text-decoration:none; color:inherit; }
+.container { max-width:960px; width:100%; padding:20px; box-sizing:border-box; }
+
+.nav { width:100%; display:flex; justify-content:center; gap:28px; padding:12px 0; }
+.nav a { font-weight:700; font-size:22px; text-transform:uppercase; font-style:italic; color:#000; }
+.nav a.current { color:var(--accent-rules); }
+
+h1.title { 
+  font-family:"Bebas Neue", sans-serif;
+  font-weight:400;
+  font-size:clamp(100px,12vw,160px);
+  margin:40px 0 10px;
+  text-align:center;
+  padding:20px;
+  border:2px solid;
+  border-image: linear-gradient(90deg, #ffd400, #ff007f, #00f2ff) 1;
+  border-radius:8px;
+  box-shadow: inset 0 -4px 10px rgba(0,0,0,0.04);
+}
+
+.tagline { font-size:clamp(26px,5vw,36px); text-transform:uppercase; font-weight:700; color:var(--accent-rules); text-align:center; margin-bottom:var(--gap-large); }
+
+main { width:100%; max-width:960px; padding:0 12px; text-align:left; }
+
+section { margin-bottom:var(--gap-mid); }
+section h2 { font-size:22px; margin-bottom:8px; text-transform:uppercase; }
+section p { margin-bottom:12px; line-height:1.5; }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="predict.html">Predict</a>
+    <a href="table.html">Table</a>
+    <a href="rules.html" class="current">Rules</a>
+  </nav>
+
+  <header>
+    <h1 class="title">LMS XII</h1>
+    <div class="tagline">GAME RULES</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Scoring</h2>
+      <p>4 points for a player goal, 2 points for an assist.</p>
+      <p>Home win against a level team gives 60 points. Adjusted for goal/assist combinations.</p>
+    </section>
+    <section>
+      <h2>Team Picks</h2>
+      <p>Select your team for the week carefully. Points are awarded based on fixtures.</p>
+    </section>
+    <section>
+      <h2>Player Picks</h2>
+      <p>You may select a player per week. Once a player is picked, they cannot be picked again for that week.</p>
+    </section>
+    <section>
+      <h2>Other Rules</h2>
+      <p>Draws are scored at 30% of a full win. Goal: 30 points, Assist: 15 points. Ensure selections are entered before submitting.</p>
+    </section>
+  </main>
+</div>
+</body>
+</html>
